@@ -7,7 +7,7 @@ title: About me
 <tr style="border: none;"> 
   <!-- Image side -->
   <td width="40%" style="border: none;">
-    <img src="{{ 'assets/img/flower.jpg' | relative_url }}" alt="Not found" />
+    <img src="{{ 'assets/img/Flower.jpg' | relative_url }}" alt="Not found" />
   </td>
   
   <!-- Information side -->
