@@ -8,6 +8,7 @@ title: Research
 <span style="font-size:16px;"> Coming Soon...
 
 #### Conference Paper
+* <span style="font-size:16px;"> __Flahaut, Z.__, Miller, B., Singh, S., Benoit, D., Flaxman T. (2024) Exploring Ergonomic Disparities in Laparoscopic Surgery: A 3D Motion Capture Analysis of Expert vs Novice Surgeons. Canadian Society of Biomechanics Conference 2024, August 19-22nd, 2024. Edmonton, Alberta, Canada
 * <span style="font-size:16px;"> Flaxman, T., Carsen, S., __Flahaut, Z.__, Romanchuk, N., Shourijeh M., Del Bel, M., Benoit, D. (2024) Using a Musculoskeletal Model to Quantify Voluntary Knee Strength Deficits and Muscular Contribution to Torque in an ACL-injured Paediatric Population. Engineering Research Celebration Day 2024, March 7th, 2024. Ottawa, Ontario, Canada
 * <span style="font-size:16px;"> Stoelben, K., St Louis, E., Miller, B., __Flahaut, Z.__, Carsen, S., Benoit, D. (2024) Association between subjective outcomes and hop performance in pediatric individuals with anterior cruciate ligament deficient knee. Canadian Orthopaedic Association Annual Meeting 2024, June 12-15th, 2024. Halifax, Nova Scotia, Canada
 * <span style="font-size:16px;"> __Flahaut, Z.__, Miller, B., Singh, S., Benoit, D., Flaxman, T. (2023) Evaluating weight distribution in experience and naïve surgeons during a simulated laparoscopic task. Ottawa Hospital Research Day, November 14-15th . Ottawa, Ontario, Canda
