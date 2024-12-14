@@ -47,28 +47,48 @@ body {
 }
 
 /* Floating "stuk.co" text */
+/* General styling for the floating text */
 .floating-text {
   position: absolute;
   font-size: 36px;
   color: white;
-  opacity: 0.1; /* Make it subtle */
-  animation: float 5s infinite;
-  pointer-events: none; /* Prevent interference with the card */
+  opacity: 0.1; /* Subtle appearance */
+  animation: float-random 10s infinite linear;
+  pointer-events: none; /* Prevent interference with clicks */
 }
 
-/* Animation for floating text */
-@keyframes float {
+/* Keyframe for randomized movement */
+@keyframes float-random {
   0% {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(50px, -30px);
+    transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
   }
   50% {
-    transform: translate(-50px, 50px);
+    transform: translate(calc(-200px + 400px * random()), calc(-200px + 400px * random()));
   }
   75% {
-    transform: translate(30px, -50px);
+    transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* For browsers that don't support random(), you can use fixed offsets */
+@keyframes float-random-fallback {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, -30px);
+  }
+  50% {
+    transform: translate(100px, 50px);
+  }
+  75% {
+    transform: translate(-30px, 50px);
   }
   100% {
     transform: translate(0, 0);
