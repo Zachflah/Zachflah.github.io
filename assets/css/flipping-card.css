@@ -36,10 +36,10 @@ body {
 }
 
 .front img, .back img {
-    width: 100%;
+  width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the whole image fits */
-  border-radius: 10px; /* Keep the rounded corners */
+  object-fit: cover; /* Ensures the images fit properly */
+  border-radius: 10px;
 }
 
 .back {
