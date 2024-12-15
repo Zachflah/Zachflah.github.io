@@ -6,6 +6,8 @@ html, body {
   width: 100vw; /* Full viewport width */
   overflow: hidden; /* Prevent scrolling */
   background-color: black; /* Optional: Set background color */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
 }
 
 /* Card Container */
