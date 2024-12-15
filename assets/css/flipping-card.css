@@ -57,19 +57,20 @@ body {
   pointer-events: none; /* Prevent interference with clicks */
 }
 
-/* Keyframe for randomized movement */
-@keyframes float-random {
+
+/* For browsers that don't support random(), you can use fixed offsets */
+@keyframes float-random-fallback {
   0% {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
+    transform: translate(-50px, -30px);
   }
   50% {
-    transform: translate(calc(-200px + 400px * random()), calc(-200px + 400px * random()));
+    transform: translate(100px, 50px);
   }
   75% {
-    transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
+    transform: translate(-30px, 50px);
   }
   100% {
     transform: translate(0, 0);
