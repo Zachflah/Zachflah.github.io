@@ -75,6 +75,33 @@ html, body {
   user-select: none; /* Prevent text selection */
 }
 
+/* Add unique animations */
+.floating-text:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.floating-text:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+.floating-text:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s;
+}
+.floating-text:nth-child(4) {
+  top: 30%;
+  left: 10%;
+  animation-delay: 6s;
+}
+.floating-text:nth-child(5) {
+  top: 70%;
+  left: 80%;
+  animation-delay: 8s;
+}
+
 /* Floating animation with larger and random directions */
 @keyframes float-random {
   0% {
