@@ -40,12 +40,12 @@
       <span class="step">2</span>
     </div>
     <!-- QR Code with Link -->
-    <a href="tel:+123456789" class="control-item qr-link">
-      <img src="assets/img/qr-code.png" alt="QR Code" class="qr-code">
-    </a>
+    <span id="qr-button" class="control-item qr-link">
+      <img src="assets/img/qr_code_transparent_background.png" alt="QR Code Icon" class="qr-code-icon">
+    </span>
     <!-- Popup Button -->
     <span id="popup-button" class="control-item">
-      <img src="assets/img/reload-icon.png" alt="Reload Icon" class="reload-icon">
+      <img src="assets/img/reload_icon_white_transparent.png" alt="Reload Icon" class="reload-icon">
     </span>
   </div>
 
@@ -54,6 +54,14 @@
     <div class="popup-content">
       <div class="loading-circle"></div>
       <p>Downloading your student card...</p>
+    </div>
+  </div>
+
+  <!-- QR Code Popup -->
+  <div id="qr-popup" class="popup-overlay hidden">
+    <div class="popup-content">
+      <h2>QR code for your card</h2>
+      <img src="assets/img/QR-code.png" alt="QR Code" class="popup-qr-image">
     </div>
   </div>
 
