@@ -61,7 +61,7 @@ html, body {
 .merge-uk {
   display: inline-block;
   margin-left: -10px; /* Adjust overlap */
-  color: #D9D9D9; /* Ensure same light white */
+  mix-blend-mode: multiply;
 }
 
 /* Floating text styles */
