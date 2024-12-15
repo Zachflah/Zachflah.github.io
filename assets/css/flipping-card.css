@@ -17,9 +17,11 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90vw; /* Use 90% of the viewport width */
+  height: 90vh; /* Use 90% of the viewport height */
   width: 80vw; /* Larger width relative to the viewport */
-  max-width: 800px; /* Allow for a bigger card */
-  height: 60vh; /* Increase height relative to the viewport */
+  max-width: 1000px; /* Limit max size for desktop */
+  max-height: 600px; /* Limit max height */
   perspective: 1000px; /* For 3D effect */
 }
 
