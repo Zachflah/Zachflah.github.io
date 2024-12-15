@@ -57,12 +57,27 @@ html, body {
   transform: rotateY(180deg);
 }
 
-/* Target U and K specifically */
-.merge-uk {
+/* Wrapper for UK */
+.uk-wrapper {
+  position: relative; /* Ensure child elements can stack */
   display: inline-block;
-  margin-left: -10px; /* Adjust overlap */
-  color: #D9D9D9; /* Ensure same light white */
 }
+
+/* Merge U and K */
+.merge-uk {
+  position: relative;
+  display: inline-block;
+  color: #D9D9D9; /* Ensure solid color */
+}
+
+/* K placed on top of U */
+.merge-uk.overlap {
+  position: absolute; /* Stack the K directly on top */
+  top: 0;
+  left: -8px; /* Fine-tune overlap */
+  z-index: 1; /* Place K above U */
+}
+
 
 /* Floating text styles */
 .floating-text {
