@@ -131,22 +131,23 @@ html, body {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Spread elements evenly */
-  align-items: center; /* Vertically center items */
-  padding: 10px 20px;
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px; /* Add padding on both sides */
   background-color: #111;
   color: white;
   z-index: 1000;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 /* Step Indicator */
 .step-indicator {
   display: flex;
-  justify-content: center; /* Center step numbers */
+  justify-content: center;
   align-items: center;
-  flex: 1; /* Take up space to center properly */
+  flex: 1; /* Take up available space for centering */
 }
 
 .step-indicator .step {
@@ -158,7 +159,7 @@ html, body {
   border-radius: 50%;
   background-color: black;
   color: white;
-  margin: 0 5px; /* Add a little spacing between steps */
+  margin: 0 5px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -168,16 +169,17 @@ html, body {
   color: black;
 }
 
-/* QR Code and Refresh Icon Group */
+/* Icon Group - Grouped QR and Reload Icons */
 .icon-group {
   display: flex;
-  align-items: center; /* Align icons vertically */
-  gap: 10px; /* Reduce spacing between icons */
+  align-items: center;
+  gap: 10px; /* Space between icons */
+  padding-right: 10px; /* Prevents icons from touching the edge */
 }
 
 .qr-code-icon,
 .reload-icon {
-  width: 24px; /* Set a smaller size */
+  width: 24px; /* Smaller size */
   height: 24px;
   cursor: pointer;
   object-fit: contain;
