@@ -49,3 +49,33 @@ body {
 .back {
   transform: rotateY(180deg);
 }
+
+/* Floating text styles */
+.floating-text {
+  position: absolute;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.1); /* Subtle white text */
+  pointer-events: none; /* Prevent interaction */
+  animation: float-random 5s infinite alternate ease-in-out;
+  z-index: -1; /* Ensure it stays in the background */
+  user-select: none; /* Prevent text selection */
+}
+
+/* Floating animation */
+@keyframes float-random {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20px, -30px);
+  }
+  50% {
+    transform: translate(30px, 40px);
+  }
+  75% {
+    transform: translate(-10px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
