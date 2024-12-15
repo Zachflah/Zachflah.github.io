@@ -1,29 +1,26 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Fullscreen body */
 html, body {
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  overflow: hidden; /* Prevent scrolling */
-  background-color: black; /* Background color */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-/* Centering the card container */
+/* Card Container */
 .card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
   width: 90vw; /* Responsive width */
-  max-width: 500px; /* Limit maximum width */
-  aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
-  perspective: 1000px; /* Required for 3D flip */
-  position: relative; /* Ensures content positioning works */
-  z-index: 1;
+  max-width: 500px; /* Limit maximum size */
+  height: 50vh; /* Maintain enough vertical space */
+  perspective: 1000px; /* 3D flip effect */
 }
 
 /* Card */
