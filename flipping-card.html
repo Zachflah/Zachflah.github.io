@@ -72,12 +72,16 @@
       window.close(); // Closes the current window/tab
     });
 
-    // Popup Trigger
-    document.getElementById("popup-button").addEventListener("click", function() {
-      document.getElementById("popup").classList.remove("hidden");
-      setTimeout(() => {
-        document.getElementById("popup").classList.add("hidden");
-      }, 3000); // Auto-hide popup after 3 seconds
+    // Show QR Code Popup
+    document.getElementById("qr-button").addEventListener("click", function() {
+    document.getElementById("qr-popup").classList.remove("hidden");
+    });
+
+    // Hide QR Code Popup when clicking outside
+    document.getElementById("qr-popup").addEventListener("click", function(e) {
+      if (e.target === this) {
+        this.classList.add("hidden");
+      }
     });
 
     // Card Flip Functionality

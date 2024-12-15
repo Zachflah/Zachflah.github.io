@@ -124,10 +124,10 @@ html, body {
   }
 }
 
-/* Control Bar - Fixed at the Bottom */
+/* Control Bar Styles */
 .control-bar {
-  position: fixed; /* Fix to bottom */
-  bottom: 0; /* Stick to the bottom */
+  position: fixed;
+  bottom: 0; /* Stick to bottom */
   left: 0;
   width: 100%; /* Full width */
   display: flex;
@@ -136,11 +136,10 @@ html, body {
   padding: 10px 20px;
   background-color: #111; /* Dark background */
   color: white;
-  z-index: 1000; /* Ensure it stays on top */
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for visibility */
+  z-index: 1000;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
 }
-
 .control-item {
   cursor: pointer;
 }
@@ -159,34 +158,52 @@ html, body {
   background-color: white;
   color: black;
 }
-.qr-code {
-  width: 40px;
-  height: 40px;
+.qr-code-icon {
+  width: 24px;
+  height: 24px;
 }
 .reload-icon {
   width: 30px;
   height: 30px;
 }
 
-/* Popup */
+/* Popup Overlay */
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 }
+
+/* Popup Content */
 .popup-content {
   background: white;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+.popup-content h2 {
+  color: #FF3366; /* Highlighted title color */
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.popup-qr-image {
+  width: 100%;
+  max-width: 250px; /* Size of QR code */
+  margin: 10px 0;
+}
+
 .loading-circle {
   width: 40px;
   height: 40px;
@@ -196,10 +213,12 @@ html, body {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
 .hidden {
   display: none;
 }
