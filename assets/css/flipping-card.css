@@ -143,24 +143,28 @@ html, body {
 .control-item {
   cursor: pointer;
 }
+/* Step Indicator Styling */
 .step-indicator .step {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: black;
-  color: white;
-  margin-right: 5px;
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  width: 30px; /* Set width of the circle */
+  height: 30px; /* Set height of the circle */
+  border-radius: 50%; /* Makes the circle */
+  background-color: black; /* Default background */
+  color: white; /* Text color */
+  margin-right: 5px; /* Add spacing between steps */
+  font-size: 16px; /* Adjust font size for clarity */
+  font-weight: 600; /* Make text bold */
 }
+/* Active Step Styling */
 .step-indicator .step.active {
-  background-color: white;
-  color: black;
+  background-color: white; /* Highlight active step */
+  color: black; /* Text color for active step */
 }
 .qr-code-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 .reload-icon {
   width: 30px;
