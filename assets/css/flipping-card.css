@@ -6,6 +6,7 @@ html, body {
   width: 100vw; /* Full viewport width */
   overflow: hidden; /* Prevent scrolling */
   background-color: black; /* Optional: Set background color */
+  display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
 }
