@@ -11,13 +11,16 @@ html, body {
   overflow: hidden; /* Prevents scrolling */
 }
 
-/* Card Container */
+/* Card Container - Larger size */
 .card-container {
-  position: relative;
-  width: 90vw; /* Responsive width */
-  max-width: 500px; /* Maximum size for larger screens */
-  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
-  perspective: 1000px; /* Needed for the 3D effect */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw; /* Larger width relative to the viewport */
+  max-width: 800px; /* Allow for a bigger card */
+  height: 60vh; /* Increase height relative to the viewport */
+  perspective: 1000px; /* For 3D effect */
 }
 
 /* Card */
