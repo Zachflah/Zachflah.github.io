@@ -54,30 +54,33 @@ body {
 
 /* Floating text styles */
 .floating-text {
-  position: fixed; /* Floats the text relative to the viewport */
+  position: fixed; /* Floats text relative to viewport */
   font-size: 36px;
-  color: rgba(255, 255, 255, 0.15); /* Subtle white opacity */
-  pointer-events: none; /* Prevent interaction with floating text */
-  animation: float-random 6s infinite alternate ease-in-out;
-  z-index: 0; /* Keeps text behind the flipping card */
-  user-select: none; /* Prevents text selection */
+  color: rgba(255, 255, 255, 0.15); /* Subtle opacity */
+  pointer-events: none; /* Prevent interaction */
+  animation: float-random 12s infinite alternate ease-in-out; /* Slower and longer animation */
+  z-index: 0; /* Ensure behind card */
+  user-select: none; /* Prevent text selection */
 }
 
-/* Floating animation */
+/* Floating animation with larger and random directions */
 @keyframes float-random {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0); /* Start at original position */
   }
-  25% {
-    transform: translate(-20px, -15px);
+  20% {
+    transform: translate(50vw, -30vh); /* Move right and slightly up */
   }
-  50% {
-    transform: translate(20px, 30px);
+  40% {
+    transform: translate(-40vw, 40vh); /* Move left and down */
   }
-  75% {
-    transform: translate(-10px, 20px);
+  60% {
+    transform: translate(30vw, -50vh); /* Move right and up */
+  }
+  80% {
+    transform: translate(-50vw, 20vh); /* Move left and slightly down */
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0, 0); /* Return to start */
   }
 }
