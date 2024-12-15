@@ -57,13 +57,19 @@ html, body {
   transform: rotateY(180deg);
 }
 
+/* Target U and K specifically */
+.merge-uk {
+  display: inline-block;
+  margin-left: -10px; /* Adjust overlap */
+}
+
 /* Floating text styles */
 .floating-text {
   position: fixed; /* Floats text relative to viewport */
   font-size: 36px;
   color: rgba(255, 255, 255, 0.15); /* Subtle opacity */
   pointer-events: none; /* Prevent interaction */
-  animation: float-random 12s infinite alternate ease-in-out; /* Slower and longer animation */
+  animation: float-random 20s infinite alternate ease-in-out; /* Slower and longer animation */
   z-index: 0; /* Ensure behind card */
   user-select: none; /* Prevent text selection */
 }
