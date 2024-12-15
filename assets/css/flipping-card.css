@@ -1,11 +1,11 @@
-/* General body styles */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+/* Fullscreen body and container */
+html, body {
   margin: 0;
-  background-color: black; /* Black background */
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevent scrolling */
+  background-color: black; /* Optional: Set background color */
 }
 
 /* Card Container */
