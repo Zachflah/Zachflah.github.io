@@ -11,7 +11,7 @@ body {
 
 .card-container {
   width: 400px; /* Adjust this width to match your card image */
-  height: 250px; /* Adjust height to maintain image aspect ratio */
+  height: 1000x; /* Adjust height to maintain image aspect ratio */
   perspective: 1000px;
   cursor: pointer;
 }
