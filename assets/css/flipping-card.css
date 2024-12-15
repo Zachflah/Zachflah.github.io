@@ -124,51 +124,63 @@ html, body {
   }
 }
 
-/* Control Bar Styles */
+/* Control Bar - Fixed at Bottom */
 .control-bar {
   position: fixed;
-  bottom: 0; /* Stick to bottom */
+  bottom: 0;
   left: 0;
-  width: 100%; /* Full width */
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Spread elements evenly */
+  align-items: center; /* Vertically center items */
   padding: 10px 20px;
-  background-color: #111; /* Dark background */
+  background-color: #111;
   color: white;
   z-index: 1000;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
 }
-.control-item {
-  cursor: pointer;
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  justify-content: center; /* Center step numbers */
+  align-items: center;
+  flex: 1; /* Take up space to center properly */
 }
-/* Step Indicator Styling */
+
 .step-indicator .step {
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  width: 30px; /* Set width of the circle */
-  height: 30px; /* Set height of the circle */
-  border-radius: 50%; /* Makes the circle */
-  background-color: black; /* Default background */
-  color: white; /* Text color */
-  margin-right: 5px; /* Add spacing between steps */
-  font-size: 16px; /* Adjust font size for clarity */
-  font-weight: 600; /* Make text bold */
-}
-/* Active Step Styling */
-.step-indicator .step.active {
-  background-color: white; /* Highlight active step */
-  color: black; /* Text color for active step */
-}
-.qr-code-icon {
-  width: 36px;
-  height: 36px;
-}
-.reload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  margin: 0 5px; /* Add a little spacing between steps */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.step-indicator .step.active {
+  background-color: white;
+  color: black;
+}
+
+/* QR Code and Refresh Icon Group */
+.icon-group {
+  display: flex;
+  align-items: center; /* Align icons vertically */
+  gap: 10px; /* Reduce spacing between icons */
+}
+
+.qr-code-icon,
+.reload-icon {
+  width: 24px; /* Set a smaller size */
+  height: 24px;
+  cursor: pointer;
+  object-fit: contain;
 }
 
 /* Popup Overlay */
