@@ -13,14 +13,16 @@ html, body {
 
 /* Card Container */
 .card-container {
-  position: relative;
-  width: 90vw; /* Adjusts to viewport width */
-  max-width: 500px; /* Prevents the card from being too wide */
-  height: 70vh; /* Adjust height relative to viewport height */
-  max-height: 600px; /* Prevents the card from being too tall */
-  perspective: 1000px;
+  position: absolute; /* Ensure it is positioned relative to the body */
+  top: 50%; /* Move the container to the middle vertically */
+  left: 50%; /* Move the container to the middle horizontally */
+  transform: translate(-50%, -50%); /* Center it perfectly */
+  width: 90vw; /* Adjust width relative to viewport */
+  max-width: 500px; /* Prevents it from being too wide */
+  height: auto; /* Maintain aspect ratio */
+  perspective: 1000px; /* Needed for 3D flip effect */
+  z-index: 1; /* Places the card above background elements */
   cursor: pointer;
-  z-index: 1; /* Places card above the floating text */
 }
 
 /* Card */
