@@ -1,3 +1,4 @@
+/* General body styles */
 body {
   display: flex;
   justify-content: center;
@@ -9,25 +10,33 @@ body {
   overflow: hidden; /* Prevent scrollbars from appearing */
 }
 
+/* Card container - responsive and centered */
 .card-container {
-  display: inline-block; /* Automatically adapts to content size */
+  display: inline-block;
   perspective: 1500px;
   cursor: pointer;
+  max-width: 90vw; /* Ensures container fits the screen */
+  max-height: 90vh;
 }
 
+/* Card styling */
 .card {
   width: 100%;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+  aspect-ratio: 16 / 9; /* Maintains 16:9 aspect ratio */
 }
 
+/* Card flip effect */
 .card-container.flipped .card {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+/* Front and back sides of the card */
+.front,
+.back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -36,17 +45,19 @@ body {
 
 .front img,
 .back img {
-  width: 100%; /* Ensures the image fills its container */
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Removes extra spaces around the image */
-  border-radius: 10px; /* Keeps the rounded corners */
+  width: 100%; /* Responsive width */
+  height: 100%; /* Adjust height */
+  object-fit: contain; /* Ensures images scale properly without cropping */
+  display: block;
+  border-radius: 10px; /* Rounded corners */
 }
 
+/* Back side flip */
 .back {
   transform: rotateY(180deg);
 }
 
-/* Floating "stuk.co" text */
+/* Floating "stuk.co" text for aesthetic effect */
 .floating-text {
   position: absolute;
   font-size: 36px;
@@ -56,8 +67,7 @@ body {
   pointer-events: none;
 }
 
-
-/* Define the animation for random movement */
+/* Floating text animation */
 @keyframes float-random {
   0% {
     transform: translate(0, 0);
@@ -73,5 +83,20 @@ body {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 95vw;
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    max-width: 100vw;
+    max-height: 60vh;
   }
 }
