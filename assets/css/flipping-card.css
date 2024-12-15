@@ -10,12 +10,14 @@ body {
 
 /* Card Container */
 .card-container {
+  position: relative;
   width: 90vw; /* Adjusts to viewport width */
   max-width: 500px; /* Prevents the card from being too wide */
   height: 70vh; /* Adjust height relative to viewport height */
   max-height: 600px; /* Prevents the card from being too tall */
   perspective: 1000px;
   cursor: pointer;
+  z-index: 1; /* Places card above the floating text */
 }
 
 /* Card */
@@ -50,3 +52,32 @@ body {
   transform: rotateY(180deg);
 }
 
+/* Floating text styles */
+.floating-text {
+  position: fixed; /* Floats the text relative to the viewport */
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.15); /* Subtle white opacity */
+  pointer-events: none; /* Prevent interaction with floating text */
+  animation: float-random 6s infinite alternate ease-in-out;
+  z-index: 0; /* Keeps text behind the flipping card */
+  user-select: none; /* Prevents text selection */
+}
+
+/* Floating animation */
+@keyframes float-random {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20px, -15px);
+  }
+  50% {
+    transform: translate(20px, 30px);
+  }
+  75% {
+    transform: translate(-10px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
