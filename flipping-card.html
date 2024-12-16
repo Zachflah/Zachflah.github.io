@@ -45,7 +45,7 @@
       <span id="qr-button" class="control-item">
         <img src="assets/img/qr_code_transparent_background.png" alt="QR Code Icon" class="qr-code-icon">
       </span>
-      <span id="popup-button" class="control-item">
+      <span id="reload-button" class="control-item">
         <img src="assets/img/reload_icon_white_transparent.png" alt="Reload Icon" class="reload-icon">
       </span>
     </div>
@@ -84,6 +84,10 @@
       if (e.target === this) {
         this.classList.add("hidden");
       }
+    });
+    // Reload Button Functionality
+    document.getElementById("reload-button").addEventListener("click", function() {
+      location.reload(); // Reloads the current page
     });
 
     // Card Flip Functionality
