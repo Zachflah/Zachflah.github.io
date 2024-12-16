@@ -133,7 +133,7 @@ html, body {
   display: flex;
   justify-content: space-between; /* Spread items evenly */
   align-items: center; /* Center vertically */
-  padding: 10px 10px; /* Add padding on both sides */
+  padding: 10px 1px; /* Add padding on both sides */
   background-color: #111;
   color: white;
   z-index: 1000;
