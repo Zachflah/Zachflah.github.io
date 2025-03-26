@@ -149,7 +149,7 @@ html, body {
   align-items: center;
   flex: 1; /* Take up available space for centering */
 }
-
+/*
 .step-indicator .step {
   display: flex;
   justify-content: center;
@@ -167,7 +167,7 @@ html, body {
 .step-indicator .step.active {
   background-color: white;
   color: black;
-}
+}*/
 
 /* Icon Group - Grouped QR and Reload Icons */
 .icon-group {
