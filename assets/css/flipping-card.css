@@ -68,7 +68,7 @@ html, body {
 .floating-text {
   position: fixed; /* Floats text relative to viewport */
   font-size: 36px;
-  color:rgba(217, 217, 217, 0.32); /* Subtle opacity */
+  color:rgba(36, 36, 36, 0.34); /* Subtle opacity */
   pointer-events: none; /* Prevent interaction */
   animation: float-random 20s infinite alternate ease-in-out; /* Slower and longer animation */
   z-index: 0; /* Ensure behind card */
@@ -84,17 +84,17 @@ html, body {
 .floating-text:nth-child(2) {
   top: 50%;
   left: 70%;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 .floating-text:nth-child(3) {
   top: 80%;
   left: 40%;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 .floating-text:nth-child(4) {
   top: 30%;
   left: 10%;
-  animation-delay: 3s;
+  animation-delay: 6s;
 }
 .floating-text:nth-child(5) {
   top: 70%;
