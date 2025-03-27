@@ -101,6 +101,11 @@ html, body {
   left: 80%;
   animation-delay: 8s;
 }
+.floating-text:nth-child(6) {
+  top: 70%;
+  left: 50%;
+  animation-delay: 8s;
+}
 
 /* Floating animation with larger and random directions */
 @keyframes float-random {
