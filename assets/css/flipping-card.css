@@ -27,8 +27,8 @@ html, body {
 
 /* Card */
 .card {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -41,14 +41,14 @@ html, body {
 /* Front and Back Faces */
 .front, .back {
   position: absolute;
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
 }
 
 .front img, .back img {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   object-fit: contain; /* Ensure the image scales without cropping */
   border-radius: 10px; /* Optional rounded corners */
 }
