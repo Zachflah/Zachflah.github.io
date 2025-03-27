@@ -68,7 +68,7 @@ html, body {
 .floating-text {
   position: fixed; /* Floats text relative to viewport */
   font-size: 36px;
-  color:rgba(36, 36, 36, 0.34); /* Subtle opacity */
+  color:rgba(116, 115, 115, 0.34); /* Subtle opacity */
   pointer-events: none; /* Prevent interaction */
   animation: float-random 20s infinite alternate ease-in-out; /* Slower and longer animation */
   z-index: 0; /* Ensure behind card */
