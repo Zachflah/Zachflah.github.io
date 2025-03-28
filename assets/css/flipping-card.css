@@ -14,8 +14,8 @@ html, body {
 /* Card Container - Larger size */
 .card-container {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 35%;
+  left: 40%;
   transform: translate(-50%, -50%);
   width: 90vw; /* Use 90% of the viewport width */
   height: 90vh; /* Use 90% of the viewport height */
