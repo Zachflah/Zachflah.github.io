@@ -245,3 +245,7 @@ html, body {
 .hidden {
   display: none;
 }
+
+#close-button {
+  margin-left: 15px; /* Pushes it slightly inward */
+}
