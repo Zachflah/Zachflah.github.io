@@ -139,7 +139,7 @@ html, body {
   justify-content: space-between; /* Spread items evenly */
   align-items: center; /* Center vertically */
   padding: 10px 1px; /* Add padding on both sides */
-  background-color: #111;
+  background-color: #121212;
   color: white;
   z-index: 1000;
   /*box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);*/
