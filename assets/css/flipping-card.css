@@ -142,9 +142,10 @@ html, body {
   background-color: #111;
   color: white;
   z-index: 1000;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  /*box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);*/
+  font-size: 24px;
   box-sizing: border-box; /* Ensure padding doesn't affect width */
+  border: none;
 }
 
 /* Step Indicator */
