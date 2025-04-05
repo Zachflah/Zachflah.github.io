@@ -1,107 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Flipping Card</title>
-  <!-- Correct Path to CSS -->
-  <link rel="stylesheet" href="assets/css/flipping-card.css">
-
-  <!-- Link to the Web App Manifest file -->
-  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Selector</title>
+  <link rel="stylesheet" href="css/card-list-styles" />
 </head>
 <body>
-  <!-- Floating text for "stuk.co" -->
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  <img class="floating-image" src="assets/img/stuk-logoo.png" alt="STUK logo">
-  
-  <!--<div class="floating-text">STU<span class="merge-uk">K</span></div>
-  <div class="floating-text">STU<span class="merge-uk">K</span></div>
-  <div class="floating-text">STU<span class="merge-uk">K</span></div>
-  <div class="floating-text">STU<span class="merge-uk">K</span></div>
-  <div class="floating-text">STU<span class="merge-uk">K</span></div>
-  <div class="floating-text">STU<span class="merge-uk">K</span></div>
-  -->
-  
-  <!-- Flipping Card Section -->
-  <div class="card-container" onclick="flipCard(this)">
-    <div class="card">
-      <!-- Front of the card -->
-      <div class="front">
-        <img src="assets/img/front-card - Copy2.png" alt="Front of the Card">
-      </div>
-      <!-- Back of the card -->
-      <div class="back">
-        <img src="assets/img/back-card.png" alt="Back of the Card">
-      </div>
-    </div>
+  <h1 class="page-title">Choose a Card</h1>
+  <div class="card-list">
+    <a href="cards/flipping-card-Rac.html" class="card-link">Classic Flip</a>
+    <a href="cards/flipping-card-Za.html" class="card-link">Modern Flip</a>
+    <a href="cards/3d-swipe.html" class="card-link">3D Swipe</a>
+    <a href="cards/futuristic-glow.html" class="card-link">Futuristic Glow</a>
   </div>
-
-  <div class="control-bar">
-    <span id="close-button" class="control-item">Close</span>
-  
-    <!--<div class="control-item step-indicator">
-      <span class="step active">1</span>
-      <span class="step">2</span>
-    </div>-->
-  
-    <!-- Grouped QR Code and Refresh Icon -->
-    <div class="icon-group">
-      <span id="qr-button" class="control-item">
-        <img src="assets/img/qr_code_transparent_background.png" alt="QR Code Icon" class="qr-code-icon">
-      </span>
-      <span id="reload-button" class="control-item">
-        <img src="assets/img/reload_icon_white_transparent.png" alt="Reload Icon" class="reload-icon">
-      </span>
-    </div>
-  </div>
-
-  <!-- Popup Window -->
-  <div id="popup" class="popup-overlay hidden">
-    <div class="popup-content">
-      <div class="loading-circle"></div>
-      <p>Downloading your student card...</p>
-    </div>
-  </div>
-
-  <!-- QR Code Popup -->
-  <div id="qr-popup" class="popup-overlay hidden">
-    <div class="popup-content">
-      <h2>QR code for your card</h2>
-      <img src="assets/img/QR-code.png" alt="QR Code" class="popup-qr-image">
-    </div>
-  </div>
-
-  <!-- Correct Path to JS -->
-  <script>
-    // Close Button Functionality
-    document.getElementById("close-button").addEventListener("click", function() {
-      window.close(); // Closes the current window/tab
-    });
-
-    // Show QR Code Popup
-    document.getElementById("qr-button").addEventListener("click", function() {
-    document.getElementById("qr-popup").classList.remove("hidden");
-    });
-
-    // Hide QR Code Popup when clicking outside
-    document.getElementById("qr-popup").addEventListener("click", function(e) {
-      if (e.target === this) {
-        this.classList.add("hidden");
-      }
-    });
-    // Reload Button Functionality
-    document.getElementById("reload-button").addEventListener("click", function() {
-      location.reload(); // Reloads the current page
-    });
-
-    // Card Flip Functionality
-    function flipCard(element) {
-      element.classList.toggle('flipped');
-    }
-  </script></body>
+</body>
 </html>
