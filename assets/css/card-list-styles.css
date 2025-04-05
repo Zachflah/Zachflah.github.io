@@ -1,45 +1,42 @@
+/* Reset & dark background */
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Your preferred dark mode background */
-    font-family: 'Segoe UI', sans-serif;
     height: 100%;
-    color: white;
-  }
-  
-  .container {
+    background-color: #121212;
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
   }
   
-  /* Menu card */
+  /* Card-style menu panel */
   .card-panel {
     background-color: #1e1e1e;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 240px;
     display: flex;
     flex-direction: column;
-    width: 260px;
+    overflow: hidden;
   }
   
-  /* Links */
+  /* Menu items */
   .menu-item {
-    padding: 20px;
-    font-size: 1.2rem;
-    color: #ccc;
+    padding: 18px 24px;
+    font-size: 16px;
+    color: #c7c7c7;
     text-decoration: none;
-    transition: all 0.3s ease;
-    text-align: left;
+    transition: background 0.3s, color 0.3s;
   }
   
+  /* Hover state */
   .menu-item:hover {
     background-color: #00b7ff;
-    color: #fff;
+    color: white;
   }
   
+  /* Active (highlighted) state */
   .menu-item.active {
     background-color: #00b7ff;
     color: white;
