@@ -131,7 +131,7 @@ html, body {
 
 .floating-image {
   position: fixed;
-  width: 60px; /* adjust image size */
+  width: 120px; /* adjust image size */
   height: auto;
   pointer-events: none;
   animation: float-random 20s infinite alternate ease-in-out;
