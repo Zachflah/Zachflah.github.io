@@ -3,15 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flipping-card</title>
-  <link rel="stylesheet" href="./css/card-list-styles.css" />
+  <title>Card Menu</title>
+  <style>
+    /* === Global Reset & Background === */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #121212;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* === Container for the menu box === */
+    .menu-wrapper {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* === Individual menu items === */
+    .menu-link {
+      padding: 18px 24px;
+      font-size: 16px;
+      color: #c7c7c7;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .menu-link:last-child {
+      border-bottom: none;
+    }
+
+    .menu-link:hover {
+      background-color: #00b7ff;
+      color: white;
+    }
+
+    .menu-link.active {
+      background-color: #00b7ff;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card-panel">
-      <a href="cards/flipping-card-Rac.html" class="menu-item active">R Card</a>
-      <a href="cards/flipping-card-Za.html" class="menu-item">Z Card</a>
-    </div>
+
+  <div class="menu-wrapper">
+    <a href="cards/flipping-card-Rac.html" class="menu-link active">R Card</a>
+    <a href="cards/flipping-card-Za.html" class="menu-link">Z Card</a>
+    <!-- Add more cards as needed -->
   </div>
+
 </body>
 </html>
