@@ -129,6 +129,49 @@ html, body {
   }
 }
 
+.floating-image {
+  position: fixed;
+  width: 60px; /* adjust image size */
+  height: auto;
+  pointer-events: none;
+  animation: float-random 20s infinite alternate ease-in-out;
+  z-index: 0;
+  opacity: 0.3;
+  user-select: none;
+}
+
+/* Match the positions of the original floating text */
+.floating-image:nth-of-type(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.floating-image:nth-of-type(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+.floating-image:nth-of-type(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s;
+}
+.floating-image:nth-of-type(4) {
+  top: 30%;
+  left: 10%;
+  animation-delay: 6s;
+}
+.floating-image:nth-of-type(5) {
+  top: 70%;
+  left: 80%;
+  animation-delay: 8s;
+}
+.floating-image:nth-of-type(6) {
+  top: 70%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
 /* Control Bar - Fixed at Bottom */
 .control-bar {
   position: fixed;
