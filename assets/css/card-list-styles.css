@@ -1,56 +1,47 @@
-/* Basic layout */
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #121212; /* Your preferred dark mode background */
     font-family: 'Segoe UI', sans-serif;
-    color: white;
     height: 100%;
+    color: white;
   }
   
-  /* Full screen centered container */
   .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 20px;
-    text-align: center;
   }
   
-  .page-title {
-    font-size: 3rem;
-    color: #ff3366;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-  }
-  
-  /* Card list layout */
-  .card-list {
+  /* Menu card */
+  .card-panel {
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    width: 260px;
   }
   
-  /* Individual link style */
-  .card-link {
-    font-size: 1.5rem;
-    color: white;
+  /* Links */
+  .menu-item {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
     text-decoration: none;
-    padding: 14px 28px;
-    background: linear-gradient(145deg, #1c1c1c, #101010);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
-    width: 280px;
+    text-align: left;
   }
   
-  .card-link:hover {
-    background-color: #1f1f1f;
-    color: #ff3366;
-    transform: scale(1.05);
-    box-shadow: 0 0 12px #ff336688;
+  .menu-item:hover {
+    background-color: #00b7ff;
+    color: #fff;
+  }
+  
+  .menu-item.active {
+    background-color: #00b7ff;
+    color: white;
   }
   
