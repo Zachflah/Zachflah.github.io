@@ -136,7 +136,7 @@ html, body {
   pointer-events: none;
   animation: float-random 20s infinite alternate ease-in-out;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 1;
   user-select: none;
 }
 
