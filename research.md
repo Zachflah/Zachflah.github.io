@@ -5,7 +5,7 @@ title: Research
 
 #### Publication
 
-<span style="font-size:16px;"> Coming Soon...
+* <span style="font-size:16px;"> •	Flaxman, T., Shourijeh M., Carsen, S., __Flahaut, Z.__, Romanchuk, N., Del Bel, M., Benoit, D. (2024) Using a Musculoskeletal Model to Quantify Voluntary Knee Strength Deficits and Muscular Contribution to Torque in an ACL-injured Paediatric Population. Clinical Biomechanics. https://doi.org/10.1016/j.clinbiomech.2025.106521.
 
 #### Conference Paper
 * <span style="font-size:16px;"> __Flahaut, Z.__, St Louis, E., Benoit, D. Carsen, S., Clouthier, A. (2025) Statistical Shape Models for Age Prediction: Evaluating the Impact of Modeling Software in ACL-Injured Youth. International Society of Biomechanics Conference 2025, July 27th-31st, 2025. Stockholm, Sweden
