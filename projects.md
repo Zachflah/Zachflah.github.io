@@ -3,6 +3,8 @@ layout: page
 title: Projects
 ---
 
+Coming Soon...
+
 <style>
 ul {
   display: flex;
