@@ -2,7 +2,7 @@
     "name": "Flipping Card App",
     "short_name": "CardApp",
     "start_url": "flipping-card.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#121212",
     "theme_color": "#121212",
     "icons": [
